@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BRDGenAI Dashboard</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="layout">
+      <aside class="sidebar card">
+        <h1>BRDGenAI</h1>
+        <p class="muted">Automated BRD Workspace</p>
+        <nav>
+          <a class="active" href="#">Overview</a>
+          <a href="#">Ingestion</a>
+          <a href="#">Extraction</a>
+          <a href="#">Conflicts</a>
+          <a href="#">Traceability</a>
+          <a href="#">Versions</a>
+        </nav>
+        <div class="design-link">
+          <p class="muted">UI reference</p>
+          <a href="https://dribbble.com/shots/25085123-Brightman-Motion-Design" target="_blank" rel="noopener noreferrer">Brightman Motion Design ↗</a>
+        </div>
+      </aside>
+
+      <section class="content">
+        <header class="hero card">
+          <div>
+            <p class="pill">Project: Customer Onboarding Portal</p>
+            <h2>Generate production-ready BRDs from scattered conversations.</h2>
+            <p class="muted">
+              Connected channels are analyzed for requirements, risks,
+              assumptions, sentiment, and milestones with full source citation.
+            </p>
+          </div>
+          <div class="hero-actions">
+            <button>Generate BRD v1.0</button>
+            <button class="ghost">Export PDF</button>
+          </div>
+        </header>
+
+        <div class="stats-grid">
+          <article class="card stat">
+            <p>Connected Sources</p>
+            <h3>4</h3>
+            <span>Gmail, Slack, Zoom, Uploads</span>
+          </article>
+          <article class="card stat">
+            <p>Requirements Extracted</p>
+            <h3>126</h3>
+            <span>91 functional · 35 non-functional</span>
+          </article>
+          <article class="card stat">
+            <p>Conflicts Detected</p>
+            <h3>8</h3>
+            <span>3 high priority</span>
+          </article>
+          <article class="card stat">
+            <p>Traceability Coverage</p>
+            <h3>100%</h3>
+            <span>All requirements linked to sources</span>
+          </article>
+        </div>
+
+        <section class="grid-2">
+          <article class="card panel">
+            <h3>Multi-Channel Ingestion</h3>
+            <ul class="channels">
+              <li><strong>Gmail</strong><span>Synced 6 min ago</span></li>
+              <li><strong>Slack</strong><span>Synced 2 min ago</span></li>
+              <li><strong>Zoom Transcript</strong><span>Uploaded manually</span></li>
+              <li><strong>Documents</strong><span>14 files indexed</span></li>
+            </ul>
+          </article>
+
+          <article class="card panel">
+            <h3>Natural Language Editing</h3>
+            <p class="muted">Prompt-driven iteration with versioned diffs.</p>
+            <div class="prompt-box">Rewrite Executive Summary in a more strategic tone and add one compliance objective for SOC2 readiness.</div>
+            <div class="prompt-actions">
+              <button class="small">Run Edit</button>
+              <button class="small ghost">View Diff</button>
+            </div>
+          </article>
+        </section>
+
+        <section class="card panel">
+          <h3>Requirement Snapshot</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Requirement</th>
+                <th>Owner</th>
+                <th>Confidence</th>
+                <th>Sources</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>FR-12</td>
+                <td>Support SSO with OAuth 2.0 and SAML.</td>
+                <td>IT Security</td>
+                <td>0.93</td>
+                <td>Slack #security, Gmail thread</td>
+              </tr>
+              <tr>
+                <td>NFR-07</td>
+                <td>Generate BRD in under 2 minutes for 10k messages.</td>
+                <td>Product</td>
+                <td>0.89</td>
+                <td>Roadmap meeting transcript</td>
+              </tr>
+              <tr>
+                <td>FR-31</td>
+                <td>Export BRD to PDF and DOCX with citations appendix.</td>
+                <td>Business Analyst</td>
+                <td>0.95</td>
+                <td>Gmail, uploaded scope doc</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+      </section>
+    </main>
+  </body>
+</html>
